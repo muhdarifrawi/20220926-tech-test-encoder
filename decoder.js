@@ -1,5 +1,3 @@
-const { useCssModule } = require("vue");
-
 // let plaintext = "BGDKKN VNQKC"
 // let plaintext = "FC/GGJ RJMG."
 
