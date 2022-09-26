@@ -1,6 +1,3 @@
-let encoderChar = "B"
-let message = "HELLO WORLD"
-
 let char = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M",
             "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z",
             0, 1, 2, 3, 4, 5, 6, 7, 8, 9, "(", ")", "*", "+", ",", "-", ".",
@@ -8,20 +5,20 @@ let char = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M",
 
 let newChar = []
 
-function startEncode(){
-    createOffset(encoderChar)
+function startEncode(encoderChar,message){
+    createOffset(encoderChar,message)
 }
 
-function createOffset(encoderChar) {
+function createOffset(encoderChar,message) {
     let offsetVal = char.indexOf(encoderChar);
     let setOne = char.slice(-offsetVal);
     let setTwo = char.slice(0, char.length - offsetVal);
     newChar = setOne.concat(setTwo);
     // console.log(newChar)
-    encodeMessage(message);
+    encodeMessage(encoderChar,message);
 }
 
-function encodeMessage(message) {
+function encodeMessage(encoderChar,message) {
     let prepPlaintext = message.split("");
     // console.log(prepPlaintext)
 
