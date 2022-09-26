@@ -1,0 +1,22 @@
+{
+  "name": "20220926-tech-test-encoder",
+  "version": "1.0.0",
+  "description": "Encoder for a technical test.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/muhdarifrawi/20220926-tech-test-encoder.git"
+  },
+  "author": "Arif Rawi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/muhdarifrawi/20220926-tech-test-encoder/issues"
+  },
+  "homepage": "https://github.com/muhdarifrawi/20220926-tech-test-encoder#readme",
+  "dependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
