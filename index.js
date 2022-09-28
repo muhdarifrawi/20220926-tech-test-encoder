@@ -41,11 +41,21 @@ function run() {
             validMsg = validateMsg(encodeMsg)
         }
         // let encodeChar = prompt("Select a single character: ")
-        console.log("Encoding...");
+        console.log("Encoding . . .");
         console.log(encoder.startEncode(encodeChar, encodeMsg));
     }
     else if (choice.toLowerCase() == "decode") {
-        console.log("Decode")
+        let decodeMsg = ""
+        let validMsg = false;
+
+        while (!validMsg) {
+            decodeMsg = prompt("Please enter your message: ").toUpperCase()
+            validMsg = validateMsg(decodeMsg)
+        }
+        // let encodeChar = prompt("Select a single character: ")
+        console.log("Decoding . . .")
+        console.log(decoder.startDecode(decodeMsg));
+        
     }
     else {
         console.log("Invalid entry. Select either 'Encode' or 'Decode'.")
