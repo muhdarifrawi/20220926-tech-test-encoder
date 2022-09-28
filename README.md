@@ -1,4 +1,4 @@
-# Encode and Decoder
+# Encoder and Decoder
 ## Requirements
 - [`node js`](https://nodejs.org/en/download/) has to be installed.
 - [`prompt-sync`](https://www.npmjs.com/package/prompt-sync) has to be installed. 
